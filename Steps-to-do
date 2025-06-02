@@ -1,0 +1,67 @@
+✅ **Steps to Complete Task 5**
+
+### 1. **Install and Launch Wireshark**
+
+* Installed Wireshark on Kali Linux.
+* Launched the tool and selected the active network interface (e.g., `eth0` or `wlan0`).
+
+---
+
+### 2. **Start Packet Capture**
+
+* Clicked the blue **"Shark Fin"** icon to begin capturing packets.
+* Ensured the system was connected to the internet for traffic generation.
+
+---
+
+### 3. **Generate Network Traffic**
+
+* **Browsed websites** like `www.mozilla.org`, `www.google.com`, etc.
+* **Used terminal commands** such as:
+
+  ```bash
+  ping www.google.com
+  ```
+* Traffic included DNS lookups, TCP handshakes, ICMP pings, and HTTP requests.
+
+---
+
+### 4. **Stop Capture After 1 Minute**
+
+* Clicked the **red square button** in Wireshark to stop the capture.
+* Saved the capture as `.pcap` file:
+
+  * **Filename**: `network_capture.pcap`
+
+---
+
+### 5. **Filter Traffic by Protocol**
+
+Used Wireshark filters to isolate different protocols:
+
+* `dns` – for Domain Name queries.
+* `tcp` – for TCP handshakes and HTTPS.
+* `icmp` – for ping diagnostics.
+* `http` – to view OCSP and other unencrypted web traffic.
+
+---
+
+### 6. **Analyze Packets**
+
+* **DNS**: Identified domain resolution and authoritative responses.
+* **TCP**: Observed three-way handshake (SYN, SYN-ACK, ACK).
+* **ICMP**: Noted both successful pings and port unreachable errors.
+* **OCSP (via HTTP)**: Spotted certificate status checks for HTTPS validation.
+
+---
+
+### 7. **Take Screenshots**
+
+* Captured evidence of different protocol traffic (as you've done):
+
+  * DNS
+  * TCP
+  * ICMP
+  * OCSP/HTTP
+  * Ping command output
+
